@@ -1,0 +1,19 @@
+// Um loop aninhado em C é quando você coloca um laço (for, while ou do...while) dentro de outro laço. Isso é útil para trabalhar com estruturas bidimensionais, como matrizes, tabuleiros, tabelas, entre outros.
+
+//Para cada iteração do loop externo, o loop interno é executado completamente.
+
+//imprimir uma tabela de multiplicação de 1 a 10
+
+#include <stdio.h>
+ 
+int main() {
+    for (int i = 1; i <= 10; i++) {
+        for (int j = 1; j <= 10; j++) {
+            printf("%d\t", i * j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+//Nesse exemplo, temos um loop for dentro de outro loop for. O loop externo controla as linhas (multiplicando), e o loop interno controla as colunas (multiplicador). Para cada valor de i (de 1 a 10), o loop interno percorre j (de 1 a 10), e, em cada iteração do loop interno, a multiplicação de i e j é impressa.
